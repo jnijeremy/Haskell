@@ -1,0 +1,26 @@
+ #5
+ 
+	answer:
+	1.  First reason is duplicated calculation.
+		For example, fib 4 = fib 3 + fib 2(once)
+					 fib 3 = fib 2(twice) + fib 1
+					 fib 2 = fib 1 + fib 0
+		We can see that fib 2 is actually calculated twice.
+
+	2.  Second reason is because recursive call will have overhead in building stacks.
+
+-------------------------------------------------------------------------------------------------------------------------------
+#6
+
+	anwser:
+	1. The values in the things list is Fibonacci sequence.
+	
+	2. 	  1 1 2 3 5 8..
+	 	+ 0 1 1 2 3 5..
+	   	  ------------
+	   	= 1 2 3 4 8 13..
+
+	   	As show in the above equation, things function calculate fib n = fib n-1 + fib n-2 directly
+
+	3. The difference between #4 and #6 is that #6 don't repeat calculation.  Because things generates a list, 
+	each step's balue is stored in the list, which makes evaluate the next step trival.  This lokks like dynamic programming.
